@@ -1,4 +1,4 @@
-* { 
+* {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -6,43 +6,85 @@ body {
   margin: 0 10%;
 }
 
-ul.nav {
+div.nav {
+  background-color: #3c511d;
+}
+
+div.scroll {
+  float: left;
+  width: 15%;
+  position: fixed;
+}
+
+div.content{
+  background-color: #eaf2de;
+  width: auto;
+  margin-left: 15%;
+  padding: 3px 20px;
+}
+
+####################### navigation bar ######################
+div.nav ul {
   margin: 0;
-  padding: 0;
-  background-color: darkred;
 }
 
-ul.nav li {
+div.nav li {
   display: inline;
+  width: 15%
 }
 
-ul.nav li a {
+div.nav li a {
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
 }
 
-ul.nav li a:hover {
-  background-color: #555;
-  transition: 0s;
+div.nav ul li a.active {
+  color: #3c511d;
+  background-color: white;
+  font-weight: bold;
 }
 
-ul.nav li a.active {
-  color: darkred;
+####################### leftside bar ######################
+
+div.scroll ul {
+  margin: 0;
+  padding: 0;
+}
+
+div.scroll li {
+  display: block;
+}
+
+div.scroll li a {
+  color: #3c511d;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+div.scroll li a:after {
+  color: #3c511d;
   background-color: #FFF;
   font-weight: bold;
 }
 
-ul.nav li:hover { 
+div.scroll li a:hover {
+  color: white;
   background-color: #555;
-  transition: 0s;
+  font-weight: bold;
 }
+
+
+
+
+
 
 img {
   border: 10px;
   border-style: solid;
-  border-color: darkred;
+  border-color: #555;
   margin: 0px 40px;
   float: right;
 }
@@ -50,7 +92,7 @@ img {
 table {
   border-width: 0px 0px 5px 0px;
   border-style: solid;
-  border-color: darkred;
+  border-color: #3c511d;
   background: #eee;
   padding: 0px;
   border-spacing: 0px;
@@ -59,30 +101,31 @@ table {
 
 th {
   color: white;
-  background-color: darkred;
+  background-color: #3c511d;
 }
 
 th, td {
   text-align: left;
   padding: 3px 15px;
-}
-
-td.trcell, td.facell, td.uicell {
   font-weight: bold;
 }
 
-td.trcell { 
+td.trcell, td.facell, td.uicell {
+}
+
+td.trcell {
   color: green;
 }
 
-td.facell { 
-  color: red; 
+td.facell {
+  color: #555;
 }
 
-td.uicell { 
+td.uicell {
   color: #ffc107;
 }
 
 h1 {
-  color: darkred;
+  color: #3c511d;
+  LINE-HEIGHT:20px;
 }
